@@ -3,3 +3,7 @@
 env/
 venv/
 .DS_Store
+data/dataverse_files
+data/partypress
+data/sentiws
+data/The PopuList 3.0.csv
