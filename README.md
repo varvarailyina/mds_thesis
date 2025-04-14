@@ -9,13 +9,18 @@ Hertie School in Berlin, Germany
 
 ---
 
-This repository contains the code and data used for my Master’s thesis in the Master of Data Science for Public Policy (MDS) program at the Hertie School in Berlin.
+This repository contains the code and data used for my master’s thesis in the Master of Data Science for Public Policy (MDS) program at the Hertie School in Berlin.
 
 <br>
 
 ### Project Overview
 
-This project explores how political parties in Germany use emotional language in their press releases.
+German parties don't just inform — they express:
+
+😠 😨 🤢 😢 😄 🤩 😌 🥺
+
+This project tracks **how** and **when**  these emotions show up in 45,000+ press releases.  
+
 I classify eight emotions — anger, fear, disgust, sadness, joy, enthusiasm, pride, and hope — using a pre-trained transformer-based language model (GELECTRA) fine-tuned on German political text.
 The results are aggregated to the document level and analyzed across parties, time, and issue categories.
 
