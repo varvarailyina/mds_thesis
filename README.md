@@ -1,25 +1,12 @@
 ## Emotion Analysis in German Parties' Press Releases
 
-Varvara Ilyina
-
-Master of Data Science for Public Policy  
-Hertie School in Berlin, Germany
-
-*April 28, 2025*
-
----
-
-This repository contains the code and data used for my master’s thesis in the Master of Data Science for Public Policy (MDS) program at the Hertie School in Berlin.
-
-<br>
-
 ### Project Overview
 
 German parties don't just inform — they express:
 
 😠 😨 🤢 😢 😄 🤩 😌 🥺
 
-This project tracks **how** and **when**  these emotions show up in 45,000+ press releases.  
+This project tracks how and when  these emotions show up in ~45,000 press releases.  
 
 I classify eight emotions — anger, fear, disgust, sadness, joy, enthusiasm, pride, and hope — using a pre-trained transformer-based language model (GELECTRA) fine-tuned on German political text.
 The results are aggregated to the document level and analyzed across parties, time, and issue categories.
@@ -105,6 +92,19 @@ If you use this repository or build on the data or methods, please cite:
 <br>
 
 ### Contact
+
+This repository contains the code and data used for my master’s thesis in the Master of Data Science for Public Policy (MDS) program at the Hertie School in Berlin.
+
+---
+
+Varvara Ilyina
+
+Master of Data Science for Public Policy  
+Hertie School in Berlin, Germany
+
+*April 28, 2025*
+
+---
 
 For questions, feel free to reach out:
 [v.ilyina@students.hertie-school.org](v.ilyina@students.hertie-school.org)
