@@ -1,12 +1,14 @@
 ## Emotion Analysis in German Parties' Press Releases
 
-### Project Overview
-
-German parties don't just inform — they express:
+Political parties don't just inform — they express:
 
 😠 😨 🤢 😢 😄 🤩 😌 🥺
 
-This project tracks how and when  these emotions show up in ~45,000 press releases.  
+This project tracks how and when these emotions show up in 40,000+ press releases from 6 German parties in 2010-2019.  
+
+---
+
+### Project Overview
 
 I classify eight emotions — anger, fear, disgust, sadness, joy, enthusiasm, pride, and hope — using a pre-trained transformer-based language model (GELECTRA) fine-tuned on German political text.
 The results are aggregated to the document level and analyzed across parties, time, and issue categories.
@@ -17,12 +19,11 @@ The results are aggregated to the document level and analyzed across parties, ti
 
 **Dataset**  
 Based on the PARTYPRESS dataset, filtered for German-language press releases from 2010–2019.  
-Final sample: 44,950 documents (after filtering by issue category, length, and language).
+Final sample: 41,523 documents with 453,410 sentences.
 
 **Pre-processing**  
 - Removal of outliers based on word count (2.5th and 97.5th percentiles)
 - Sentence-level splitting for compatibility with GELECTRA
-- Merging of text data with metadata (party, date, issue, etc.)
 
 **Emotion Classification**  
 Sentence-level inference using GELECTRA
@@ -30,8 +31,8 @@ Sentence-level inference using GELECTRA
 - [GitHub: 3x8emotions](https://github.com/tweedmann/3x8emotions)
 - [HuggingFace: GELECTRA](https://huggingface.co/german-nlp-group/electra-base-german-uncased)
 
-The model predicts the binary presence of each of the eight emotions per sentence.  
-Predictions are then merged back with the metadata.
+The model predicts the probability of each of the eight emotions per sentence.  
+Predictions are then merged back with the metadata and aggregated to the press release level.
 
 **Aggregation**  
 Document-level measures:
