@@ -6,6 +6,12 @@ Political parties don't just inform — they express:
 
 I classify eight emotions — anger, fear, disgust, sadness, joy, enthusiasm, pride and hope — in German political texts using a pre-trained transformer-based language model (GELECTRA). The results are aggregated to the document level and analyzed across parties, time and issue categories.
 
+<br>
+
+<img src="https://github.com/user-attachments/assets/f52bf674-f965-426f-8f23-8a329f8a3534" alt="mds_thesis_poster" width="1000"/>
+
+<br>
+
 ---
 
 ### Project Overview
